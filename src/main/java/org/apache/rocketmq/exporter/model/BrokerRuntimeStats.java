@@ -146,6 +146,10 @@ public class BrokerRuntimeStats {
     }
 
     private void loadTps(PutTps putTps, String value) {
+        if (value == null || value.isEmpty()) {
+            log.warn("loadTps WARN, value is null");
+            return;
+        }
         String[] arr = value.split(" ");
         if (arr.length >= 1) {
             putTps.ten = Double.parseDouble(arr[0]);
@@ -156,7 +160,6 @@ public class BrokerRuntimeStats {
         if (arr.length >= 3) {
             putTps.sixHundred = Double.parseDouble(arr[2]);
         }
-
     }
 
     private void loadPutMessageDistributeTime(String str) {
