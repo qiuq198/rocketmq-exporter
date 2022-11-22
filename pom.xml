@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.apache</groupId>
-    <artifactId>rocketmq-exporter</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <artifactId>rocketmq_exporter</artifactId>
+    <version>0.0.3-SNAPSHOT</version>
     <name>rocketmq-exporter</name>
 
     <description>Apache RocketMQ Prometheus Exporter</description>
